@@ -1,0 +1,35 @@
+ANTI-MONEY LAUNDERING (AML) COMPLIANCE FRAMEWORK
+
+OVERVIEW
+Financial institutions must maintain robust AML programs under the Bank Secrecy Act (BSA),
+USA PATRIOT Act, and FinCEN guidance. Non-compliance penalties averaged $1.4B per institution
+in 2023, with criminal referrals in 12 major cases.
+
+TRANSACTION MONITORING RULES
+Structuring Indicators:
+- Multiple cash deposits just below $10,000 CTR threshold (smurfing)
+- Round-dollar transactions in rapid succession
+- Transactions immediately followed by withdrawals of similar amounts
+
+High-Risk Geographies (FATF Grey/Black List):
+- Transactions involving sanctioned countries trigger automatic OFAC screening
+- Correspondent banking from high-risk jurisdictions require enhanced due diligence
+- PEP (Politically Exposed Person) transactions require additional approval layers
+
+SUSPICIOUS ACTIVITY REPORT (SAR) THRESHOLDS
+- Transactions of $5,000+ with known/suspected illicit activity: mandatory SAR
+- Insider abuse of any amount: mandatory SAR
+- Computer intrusion affecting $5,000+: mandatory SAR
+- Tipping off a customer about SAR filing is a federal offense
+
+ML MODEL REQUIREMENTS FOR AML
+- Models must achieve <1% false negative rate on known SAR patterns
+- Explainability required: rule-based reasoning must accompany ML scores
+- Human-in-the-loop review mandatory for all SAR candidates
+- Model documentation must include training data provenance and bias assessment
+- Annual independent model validation required by OCC/Fed guidelines
+
+KYC INTEGRATION
+- CIP (Customer Identification Program) data must feed model features
+- Beneficial ownership verification required for legal entity customers
+- Ongoing monitoring must update risk scores with new KYC events

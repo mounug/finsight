@@ -1,0 +1,28 @@
+MARKET RISK FACTORS — FINANCIAL SERVICES 2024
+
+SYSTEMIC RISK INDICATORS
+VIX Volatility Index: elevated above 20 signals heightened market stress.
+Credit spreads on high-yield debt: widening >400bps historically precedes credit events.
+Inverted yield curve duration: current inversion at 18 months — longest since 1980.
+
+INTEREST RATE RISK
+- Every 100bps rate increase reduces bond portfolio value by ~7% on 7-year duration
+- Variable-rate loan books face accelerating prepayment risk in falling rate environment
+- Net interest margin (NIM) compression risk for institutions with short asset duration
+
+LIQUIDITY RISK
+- LCR (Liquidity Coverage Ratio) must exceed 100% under Basel III
+- NSFR (Net Stable Funding Ratio) benchmark: >100% for systemically important banks
+- Concentration risk: no single depositor should exceed 10% of funding base
+- Uninsured deposit ratio >40% flagged as elevated run risk (per SVB post-mortem)
+
+OPERATIONAL RISK
+- Cyber incidents affecting financial data: average cost $5.9M per incident in 2023
+- Third-party/vendor concentration risk increasingly scrutinized by OCC
+- Model risk: SR 11-7 guidance requires annual validation for all models in production
+
+FRAUD LOSS PROJECTIONS
+- Account takeover fraud: projected $7.2B in losses for 2024
+- Synthetic identity fraud: $6B+ annually, growing 30% YoY
+- Real-time payment fraud: ACH and RTP networks seeing 45% increase in fraud attempts
+- Authorized push payment (APP) fraud: $1.7B in 2023, new Reg E protections proposed

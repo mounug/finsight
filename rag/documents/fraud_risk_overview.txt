@@ -1,0 +1,30 @@
+FINANCIAL FRAUD RISK OVERVIEW — FY2024
+
+1. FRAUD LANDSCAPE
+Payment fraud losses in the US reached $10.9 billion in 2023, a 14% increase YoY.
+Card-not-present (CNP) fraud accounts for 73% of all card fraud incidents.
+Identity theft-related fraud grew 22% driven by synthetic identity schemes.
+
+2. HIGH-RISK TRANSACTION PATTERNS
+- Transactions between 12AM–5AM carry 4.2x higher fraud probability
+- Cross-border transactions exceeding $500 show elevated risk profiles
+- Velocity anomalies: >5 transactions within 1 hour flagged as suspicious
+- Email domains using temporary/disposable providers correlate with 67% higher fraud rates
+- Address mismatch between billing and shipping increases fraud likelihood by 3.1x
+
+3. FRAUD DETECTION METRICS — INDUSTRY BENCHMARKS
+- False positive rate target: <2% to maintain customer experience
+- Recall (fraud catch rate) benchmark: >85% for tier-1 institutions
+- Average precision benchmark: >0.72 for production models
+- Model refresh cadence: quarterly minimum, monthly recommended
+
+4. REGULATORY REQUIREMENTS
+- PCI DSS requires real-time transaction monitoring for all card-present transactions
+- BSA/AML mandates SAR filing within 30 days of suspicious activity detection
+- CFPB Regulation E requires fraud dispute resolution within 10 business days
+- GDPR/CCPA compliance required for customer data used in model training
+
+5. MODEL GOVERNANCE
+- All fraud models must include explainability reports (SHAP/LIME) for regulatory review
+- Concept drift monitoring mandatory with documented thresholds
+- Model validation by independent risk team required before production deployment

@@ -1,0 +1,28 @@
+CREDIT RISK INTELLIGENCE REPORT — Q3 2024
+
+EXECUTIVE SUMMARY
+Consumer credit risk indicators show mixed signals heading into Q4 2024.
+Delinquency rates on credit cards rose to 3.2%, highest since Q2 2019.
+Auto loan delinquencies reached 1.8%, driven by subprime segment pressure.
+
+KEY RISK INDICATORS
+- Debt-to-income ratios above 43% are primary predictor of default within 12 months
+- FICO scores below 620 associated with 8.7x higher default probability vs prime segment
+- Revolving utilization above 80% increases default risk by 340 basis points
+- Recent hard inquiries (>3 in 90 days) correlate with 2.4x elevated risk
+
+SECTOR EXPOSURE
+- Consumer discretionary credit exposure: $2.1T nationally
+- Charge-off rate forecast: 3.8% for 2024, up from 2.9% in 2023
+- Recovery rates on charged-off debt averaging 18 cents on the dollar
+
+MACROECONOMIC FACTORS
+- Federal funds rate at 5.25–5.50% increases refinancing stress for variable-rate borrowers
+- Unemployment rate at 3.9% — models should scenario-plan for 5.5% by Q2 2025
+- Housing equity cushion declining: HELOCs at risk if home values drop >8%
+
+RISK MITIGATION RECOMMENDATIONS
+1. Tighten origination criteria for DTI >40% applicants
+2. Implement enhanced monitoring for accounts showing velocity increases
+3. Increase loss reserve provisions by 15–20% for subprime portfolio
+4. Deploy early warning system triggers at 60-day delinquency vs 90-day current standard

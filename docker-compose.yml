@@ -1,0 +1,57 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: finsight-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models/artifacts:/app/models/artifacts
+      - ./data:/app/data
+      - ./rag:/app/rag
+      - ./mlruns:/app/mlruns
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+  dashboard:
+    build: .
+    container_name: finsight-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models/artifacts:/app/models/artifacts
+      - ./data:/app/data
+      - ./rag:/app/rag
+    command: streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  mlflow:
+    build: .
+    container_name: finsight-mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/app/mlruns
+    command: mlflow ui --backend-store-uri /app/mlruns --host 0.0.0.0 --port 5000
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: finsight-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:

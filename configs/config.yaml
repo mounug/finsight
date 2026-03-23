@@ -1,0 +1,48 @@
+model:
+  name: xgboost_fraud_detector
+  version: "1.0"
+  params:
+    n_estimators: 500
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    scale_pos_weight: 10
+    use_label_encoder: false
+    eval_metric: auc
+    random_state: 42
+
+training:
+  test_size: 0.2
+  val_size: 0.1
+  random_state: 42
+  early_stopping_rounds: 50
+
+data:
+  raw_path: data/raw/transactions.csv
+  processed_path: data/processed/
+  synthetic_samples: 50000
+
+rag:
+  ollama_model: llama3
+  embedding_model: all-MiniLM-L6-v2
+  faiss_index_path: rag/faiss_index
+  docs_path: rag/documents/
+  chunk_size: 500
+  chunk_overlap: 50
+  top_k: 4
+
+api:
+  host: 0.0.0.0
+  port: 8000
+
+dashboard:
+  port: 8501
+
+mlflow:
+  tracking_uri: mlruns
+  experiment_name: finsight_fraud_detection
+
+monitoring:
+  drift_threshold: 0.1
+  reference_data_path: data/processed/reference.csv
